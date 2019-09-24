@@ -174,8 +174,11 @@ img {
   max-width: 1000px;
   margin: 0 auto;
 }
+.menu h1 {
+  font-size: 3.5rem;
+}
 .menu .logo {
-  width: 30%;
+  width: 40px;
 }
 .menu .nav-items {
   display: flex;
@@ -195,15 +198,43 @@ img {
 .background {
   background: #EAFFEA;
 }
+.home .water-img {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 4%;
+}
 .home .feature {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 4%;
 }
 .home .feature .text-content {
   width: 48%;
 }
+.bottom-content {
+  background: #20B86F;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.bottom-content h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-content .bottom-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .feature-img {
   width: 50%;
   height: 50%;
+}
+footer {
+  background: #20B86F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
