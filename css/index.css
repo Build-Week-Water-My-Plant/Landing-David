@@ -246,6 +246,18 @@ img {
   height: 400px;
   margin-bottom: 4%;
 }
+.home .intro h1 {
+  margin-bottom: 2%;
+}
+.home .intro p {
+  margin-bottom: 2%;
+}
+@media (max-width:800px) {
+  .home .intro {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
 .home .feature {
   display: flex;
   flex-wrap: wrap;
@@ -290,8 +302,9 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 2%;
 }
-.bottom-content .buttom-button {
+.bottom-content .bottom-button {
   display: block;
   background-color: #0A2342;
   margin: 0 1% 2%;
@@ -311,6 +324,10 @@ img {
   justify-content: center;
   margin-top: 2%;
 }
+.bottom-content .bottom-button:hover {
+  background: white;
+  color: #0A2342;
+}
 .feature-img {
   width: 50%;
   height: 50%;
@@ -325,4 +342,43 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.about .top-content h1 {
+  text-align: center;
+}
+.about .team-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+@media (max-width:500px) {
+  .about .team-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+  }
+}
+.about .team-content .member {
+  width: 50%;
+  margin-top: 2%;
+}
+@media (max-width:500px) {
+  .about .team-content .member {
+    width: 150%;
+  }
+}
+.about .team-content .member .about-text h2 {
+  font-size: 1.8rem;
+}
+.about .team-content .member .about-text h3 {
+  font-size: 1.6rem;
+}
+.about .team-content .member .about-text a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+.member-img {
+  width: 50%;
 }

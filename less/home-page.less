@@ -12,6 +12,21 @@ background: #EAFFEA;
         height: 400px;
         margin-bottom:4%;
     }
+
+    .intro {
+        h1 {
+            margin-bottom: 2%;
+        }
+        p {
+            margin-bottom: 2%;
+        }
+        @media @tablet{
+            width: 90%;
+            margin-left: 5%;
+        }
+    }
+
+
     .feature{
     display: flex;
     flex-wrap: wrap;    
@@ -61,8 +76,9 @@ background: #EAFFEA;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 2%;
     }
-    .buttom-button {
+    .bottom-button {
         .custom-btn(#0A2342,400px,white);
         display: flex;
        flex-direction: row;
@@ -71,11 +87,13 @@ background: #EAFFEA;
         text-align: center;
         align-items: center;
         justify-content: center;
-        margin-top: 2%;  
+        margin-top: 2%;     
         
-        
+    }//bottom-button close
+    .bottom-button:hover{
+        background: white;
+        color: #0A2342;
     }
-  
 }//bottom-content
 
 
