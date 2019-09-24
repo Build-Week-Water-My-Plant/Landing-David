@@ -17,11 +17,35 @@ background: #EAFFEA;
     flex-wrap: wrap;    
     justify-content: space-between;    
     margin-bottom:4%;
+
+    @media @tablet {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    @media @phone{
+        display:flex;
+        flex-direction: column-reverse;
+        margin-left: 10%;
+        
+    }
+
+    
         .text-content{
         width: 48%;
-       
-        }
+            @media @phone{
+                width: 100%;
+                margin-top:4%;
+            }
+        }//text close
     }//feature close
+
+    .reverse {
+        @media @phone {
+        display: flex;
+        flex-direction: column;
+        }
+    }
 
 
 
@@ -38,18 +62,29 @@ background: #EAFFEA;
         flex-direction: column;
         align-items: center;
     }
-    .bottom-button {
+    .buttom-button {
+        .custom-btn(#0A2342,400px,white);
         display: flex;
-        flex-direction: column;
+       flex-direction: row;
+        align-self: center;
+        align-content: center;
+        text-align: center;
         align-items: center;
+        justify-content: center;
+        margin-top: 2%;  
+        
+        
     }
+  
 }//bottom-content
 
 
 .feature-img {
     width: 50%;
     height:50%;
-
+    @media @phone {
+        width: 90%;
+    }
 }
 
 footer {
@@ -57,4 +92,5 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
