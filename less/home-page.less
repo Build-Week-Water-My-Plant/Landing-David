@@ -1,7 +1,7 @@
 
 .background {
 
-background: #EAFFEA;
+background: @body-background-color;
 }
 
 
@@ -68,7 +68,7 @@ background: #EAFFEA;
 
 }//home close
 .bottom-content {
-    background: #20B86F;
+    background: @bottom-background-color;
     display: flex;
      flex-direction: column;
      align-content: center;
@@ -79,7 +79,7 @@ background: #EAFFEA;
         padding-top: 2%;
     }
     .bottom-button {
-        .custom-btn(#0A2342,400px,white);
+        .custom-btn(@button-color,400px,white);
         display: flex;
        flex-direction: row;
         align-self: center;
@@ -92,7 +92,7 @@ background: #EAFFEA;
     }//bottom-button close
     .bottom-button:hover{
         background: white;
-        color: #0A2342;
+        color: @button-color;
     }
 }//bottom-content
 
@@ -106,7 +106,7 @@ background: #EAFFEA;
 }
 
 footer {
-    background: #20B86F;
+    background: @bottom-background-color;
     display: flex;
     flex-direction: column;
     align-items: center;
