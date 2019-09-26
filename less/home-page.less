@@ -77,8 +77,11 @@ background: @body-background-color;
         flex-direction: column;
         align-items: center;
         padding-top: 2%;
+
+        
     }
-    .bottom-button {
+    
+    a {
         .custom-btn(@button-color,400px,white);
         display: flex;
        flex-direction: row;
@@ -88,9 +91,12 @@ background: @body-background-color;
         align-items: center;
         justify-content: center;
         margin-top: 2%;     
-        
-    }//bottom-button close
-    .bottom-button:hover{
+        text-decoration: none;
+        font-size: 3.5rem;
+    }//a Close
+    
+
+    a:hover{
         background: white;
         color: @button-color;
     }
