@@ -13,7 +13,7 @@
     .team-content{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 5%;
+        margin-top: 3%;
         margin-left:20%;
         margin-bottom: 2%;
       
@@ -28,7 +28,7 @@
 
         .member {
          width: 50%;
-         margin-top:2%;
+         margin-top:3%;
 
          @media @phone {
              width: 150%;
@@ -36,19 +36,33 @@
              
          }
          .about-text {
+             text-align: center;
+             margin-right: 50%;
+             
              h2{
-                 font-size:1.8rem;
+                 font-size:2rem;
+                 margin-bottom: 0;
+                 padding-bottom: 0;
+                 margin-bottom: 1%;
+                 white-space: nowrap;
              }
              h3{
                  font-size:1.6rem;
+                 margin-bottom: 5%;
              }
              a {
                  text-decoration: none;
                  color: black;
                  font-size:1.6rem;
+                .custom-btn2(@button-color,100%,white);
+                 
              }
+                a:hover{
+                background: white;
+                color: @button-color;
+            }
          }
-           
+         
         }//member close
 
 
@@ -62,5 +76,6 @@
    }
 
 .about-footer {
-    height: 30%;
+    height: 60px;
+    padding: 1%;
 }

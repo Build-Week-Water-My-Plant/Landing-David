@@ -350,7 +350,7 @@ footer {
 .about .team-content {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5%;
+  margin-top: 3%;
   margin-left: 20%;
   margin-bottom: 2%;
 }
@@ -363,27 +363,50 @@ footer {
 }
 .about .team-content .member {
   width: 50%;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 @media (max-width:500px) {
   .about .team-content .member {
     width: 150%;
   }
 }
+.about .team-content .member .about-text {
+  text-align: center;
+  margin-right: 50%;
+}
 .about .team-content .member .about-text h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 1%;
+  white-space: nowrap;
 }
 .about .team-content .member .about-text h3 {
   font-size: 1.6rem;
+  margin-bottom: 5%;
 }
 .about .team-content .member .about-text a {
   text-decoration: none;
   color: black;
+  display: block;
+  background-color: #0A2342;
+  cursor: pointer;
+  width: 100%;
+  height: 20%;
   font-size: 1.6rem;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 3.5% 0;
+}
+.about .team-content .member .about-text a:hover {
+  background: white;
+  color: #0A2342;
 }
 .member-img {
   width: 50%;
 }
 .about-footer {
-  height: 30%;
+  height: 60px;
+  padding: 1%;
 }
