@@ -304,7 +304,7 @@ img {
   align-items: center;
   padding-top: 2%;
 }
-.bottom-content .bottom-button {
+.bottom-content a {
   display: block;
   background-color: #0A2342;
   margin: 0 1% 2%;
@@ -323,8 +323,10 @@ img {
   align-items: center;
   justify-content: center;
   margin-top: 2%;
+  text-decoration: none;
+  font-size: 3.5rem;
 }
-.bottom-content .bottom-button:hover {
+.bottom-content a:hover {
   background: white;
   color: #0A2342;
 }
@@ -409,4 +411,9 @@ footer {
 .about-footer {
   height: 60px;
   padding: 1%;
+}
+@media (max-width:500px) {
+  .about-footer p {
+    margin-top: 2%;
+  }
 }
